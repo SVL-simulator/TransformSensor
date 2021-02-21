@@ -1,7 +1,7 @@
 {
   "name": "Transform Sensor",
   "accessType": "public",
-  "description": "Example of a Transform sensor.",
+  "description": "This sensor is specifically used to parent other sensors. For example, if there is a cluster of sensors, a Transform sensor can be added at the location of the cluster and then the individual sensors can have a transform that is relative to the location of the Transform sensor.\nSee {{DOCS_HOST}}/docs/python-api/#transform-sensor for more details.",
   "licenseName": "LG Content",
   "copyright": "LG Electronics Inc.",
   "tags": [
