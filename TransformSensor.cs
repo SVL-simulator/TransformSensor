@@ -14,7 +14,16 @@ namespace Simulator.Sensors
     [SensorType("Transform", new System.Type[] { })]
     public class TransformSensor : SensorBase
     {
-        public override SensorDistributionType DistributionType => SensorDistributionType.LowLoad;
+        public override SensorDistributionType DistributionType => SensorDistributionType.MainOrClient;
+        public override float PerformanceLoad { get; } = 0.05f;
+
+        protected override void Initialize()
+        {
+        }
+
+        protected override void Deinitialize()
+        {
+        }
 
         public override void OnBridgeSetup(BridgeInstance bridge)
         {
